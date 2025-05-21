@@ -2,4 +2,4 @@
 ntp server 01.ntp.atl.acme.com
 ntp server 02.ntp.atl.acme.com
 
-ntp enable
+ntp enable # TODO: add ntp servers
