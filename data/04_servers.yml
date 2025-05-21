@@ -28,6 +28,12 @@ spec:
       ip_addresses:
         data:
           - address: "172.16.130.2"
+    - name: "03.ntp.atl.acme.com"
+      location: "atl"
+      status: "active"
+      ip_addresses:
+        data:
+          - address: "172.16.130.3"
     - name: "01.ntp.us.acme.com"
       location: "US"
       status: "active"
