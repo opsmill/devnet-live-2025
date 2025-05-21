@@ -8,6 +8,8 @@ nodes:
     display_labels:
       - name__value
     icon: gis:search-country
+    inherit_from:
+      - CoreArtifactTarget
     attributes:
       - name: name
         kind: Text
