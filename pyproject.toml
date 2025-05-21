@@ -1,9 +1,9 @@
 [project]
 name = "devnet-live-2025"
 version = "0.1.0"
-description = "Add your description here"
+description = "Example project for the DevNet Live session on how to build a production-grade automation platform with Infrahub"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "infrahub-sdk[all] @ git+https://github.com/opsmill/infrahub-sdk-python.git@dga-20250330-object-cmd",
+    "infrahub-sdk[all]==1.12.1",
 ]

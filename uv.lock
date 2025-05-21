@@ -63,7 +63,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "infrahub-sdk", extras = ["all"], git = "https://github.com/opsmill/infrahub-sdk-python.git?rev=dga-20250330-object-cmd" }]
+requires-dist = [{ name = "infrahub-sdk", extras = ["all"], specifier = "==1.12.1" }]
 
 [[package]]
 name = "dulwich"
@@ -131,8 +131,8 @@ wheels = [
 
 [[package]]
 name = "infrahub-sdk"
-version = "1.10.0"
-source = { git = "https://github.com/opsmill/infrahub-sdk-python.git?rev=dga-20250330-object-cmd#6f708c56b84f77332e8071080866ffa0a4faad4a" }
+version = "1.12.1"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "dulwich" },
     { name = "graphql-core" },
@@ -143,9 +143,14 @@ dependencies = [
     { name = "ujson" },
     { name = "whenever" },
 ]
+sdist = { url = "https://files.pythonhosted.org/packages/b4/76/9bb27787446392855aadd8cce9ea922dde2a5c007d2cca0498cde86103f3/infrahub_sdk-1.12.1.tar.gz", hash = "sha256:4898c2aaa5d98d8134a4e41cb05060e1e517dc7aad4b9e2e58c00bfd0a029a87", size = 123551 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8b/1b/3238cc47885b3e0a334c447bbebe31d4cb5f411db43682d79592f43fc70f/infrahub_sdk-1.12.1-py3-none-any.whl", hash = "sha256:4ca7e61ea8c2160549af83b3b9b645b5cedab004c1d2459fff3014d222f16388", size = 159488 },
+]
 
 [package.optional-dependencies]
 all = [
+    { name = "click" },
     { name = "jinja2" },
     { name = "numpy" },
     { name = "pyarrow" },
