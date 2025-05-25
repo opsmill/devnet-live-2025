@@ -4,7 +4,7 @@ ntp server {{ server.node.name.value }}
 {% endfor %}
 
 {% if data.InfraDevice.edges[0].node.location.node.servers.edges|length > 0 %}
-ntp enable # TODO: add ntp servers
+ntp enable
 {% else %}
-ntp disable # TODO: add ntp servers
+ntp disable
 {% endif %}
