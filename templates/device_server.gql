@@ -2,7 +2,7 @@ query($device_name: String!) {
   InfraDevice(name__value: $device_name) {
     edges {
       node {
-        name {
+        name {é"'(§è)
           value
         }
         location {
@@ -10,7 +10,7 @@ query($device_name: String!) {
             name {
               value
             }
-            servers {
+            servers {!!
               edges {
                 node {
                   name {
